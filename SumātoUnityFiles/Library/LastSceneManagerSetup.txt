@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/SumatoUnityFiles.unity
-  isLoaded: 1
-  isActive: 1
