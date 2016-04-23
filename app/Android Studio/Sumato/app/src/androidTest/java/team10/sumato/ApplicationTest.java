@@ -1,4 +1,4 @@
-package com.example.team10.sumato;
+package team10.sumato;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

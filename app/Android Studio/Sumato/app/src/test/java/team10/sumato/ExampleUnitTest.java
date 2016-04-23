@@ -1,4 +1,4 @@
-package com.example.team10.sumato;
+package team10.sumato;
 
 import org.junit.Test;
 
