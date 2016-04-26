@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="39ae2f4a47b1d137219c483c633780b5e5907840">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e03be613837f1464e583473a31b52e75ad98d48b\classes.dex" />
+    </item>
+
+</items>
