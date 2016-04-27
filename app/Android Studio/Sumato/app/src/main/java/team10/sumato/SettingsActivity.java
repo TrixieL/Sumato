@@ -66,8 +66,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 // Load the preferences from an XML resource
                 addPreferencesFromResource(R.xml.pref_general);
 
-                bindPreferenceSummaryToValue(findPreference("default_IP_key"));
-                bindPreferenceSummaryToValue(findPreference("default_port_key"));
+                bindPreferenceSummaryToValue(findPreference("IP_key"));
+                bindPreferenceSummaryToValue(findPreference("port_key"));
 
             }
         }
