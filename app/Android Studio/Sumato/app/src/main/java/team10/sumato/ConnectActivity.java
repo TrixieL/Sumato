@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+
 public class ConnectActivity extends AppCompatActivity {
 
     Button btnConnect;
@@ -32,18 +33,23 @@ public class ConnectActivity extends AppCompatActivity {
             public void onClick(View v) {
                 connectSumato();
             
-                final Intent gyroscopeReadings = new Intent(getApplicationContext(), GyroscopeReadings.class);
-                startActivity(gyroscopeReadings);
+
             }
        });
     }
 
     public void connectSumato(){
         initSingleton();
-        TCPSingleton.getInstance().getClient().start();
-        TCPSingleton.getInstance().getClient().send("PAIR_PS3");
+        //TCPSingleton.getInstance().getClient().start();
+       // TCPSingleton.getInstance().getClient().send("PAIR_PS3");
 
         //TODO: check if the pairing was successful and move to the next activity
+
+        final Intent gyroscopeReadings = new Intent(getApplicationContext(), GyroscopeReadings.class);
+        startActivity(gyroscopeReadings);
+
+        
+
     }
 
     @Override

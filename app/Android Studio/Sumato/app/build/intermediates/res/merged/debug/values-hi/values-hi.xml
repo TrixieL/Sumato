@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"मुख्यपृष्ठ पर नेविगेट करें"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,5 +19,12 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"इसके द्वारा साझा करें"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s के साथ साझा करें"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"संक्षिप्त करें"</string>
+    <string msgid="607483269550346980" name="got_it">"समझ लिया"</string>
+    <string msgid="3033913737471886041" name="place_your_phone_into_cardboard">"अपने फ़ोन को अपने कार्डबोर्ड व्यूअर में रखें"</string>
+    <string msgid="8644661894594395876" name="place_your_viewer_into_viewer_format">"अपने फ़ोन को अपने <ns1:g id="VIEWER_NAME">%s</ns1:g> व्यूअर में रखें"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="1762411366348526647" name="switch_viewer_action">"स्विच करें"</string>
+    <string msgid="4518576606713444785" name="switch_viewer_prompt">"दूसरा व्यूअर उपयोग कर रहे हैं?"</string>
+    <string msgid="4804039743799852394" name="viewer_configured_dialog_title">"व्यूअर कॉन्फ़िगर किया गया!"</string>
+    <string msgid="4463041247783043262" name="viewer_configured_message_format">"ऐप्लिकेशन अब <ns1:g id="VIEWER_NAME">%s</ns1:g> व्यूअर के लिए कॉन्फ़िगर हो गया है."</string>
 </resources>
