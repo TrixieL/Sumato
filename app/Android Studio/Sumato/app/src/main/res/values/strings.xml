@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Sumato</string>
     <string name="connect_to_sumato">Connect to Sumato</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="default_IP">192.168.42.1</string>
+    <string name="default_port">9999</string>
+
 </resources>
