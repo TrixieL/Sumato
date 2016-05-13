@@ -45,9 +45,10 @@ public class ConnectActivity extends AppCompatActivity {
 
         //TODO: check if the pairing was successful and move to the next activity
 
-        final Intent gyroscopeReadings = new Intent(getApplicationContext(), GyroscopeReadings.class);
-        startActivity(gyroscopeReadings);
-
+    //    final Intent gyroscopeReadings = new Intent(getApplicationContext(), GyroscopeReadings.class);
+    //    startActivity(gyroscopeReadings);
+        Intent trackerActivity = new Intent(this, TrackingActivity.class);
+        startActivity(trackerActivity);
         
 
     }

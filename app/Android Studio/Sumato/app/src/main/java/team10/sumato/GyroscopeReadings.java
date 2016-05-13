@@ -7,15 +7,14 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import java.math.*;
 
 public class GyroscopeReadings extends AppCompatActivity {
 
-    private boolean gyroscopeAvailable()
-    {
+    private boolean gyroscopeAvailable() {
         return getPackageManager().hasSystemFeature(
                 PackageManager.FEATURE_SENSOR_GYROSCOPE);
     }
@@ -36,21 +35,16 @@ public class GyroscopeReadings extends AppCompatActivity {
         btnStartReadings.setText("Start");
         btnStartReadings.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if ( started ) {
+                if (started) {
                     started = false;
                     btnStartReadings.setText("Start");
-                }
-                else {
+                } else {
                     started = true;
                     btnStartReadings.setText("Stop");
                 }
 
             }
         });
-
-
-
-
-
     }
 }
+
