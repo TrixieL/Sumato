@@ -31,7 +31,7 @@ public class MotorMovement {
     public MotorMovement() {
         this.xLimit = 80;
         this.yLimit = 80;
-        this.sendingDelay = 10;
+        this.sendingDelay = 100;
         this.offset = 150;
     }
 

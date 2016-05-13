@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 
 public class ConnectActivity extends AppCompatActivity {
@@ -45,8 +43,6 @@ public class ConnectActivity extends AppCompatActivity {
 
         //TODO: check if the pairing was successful and move to the next activity
 
-    //    final Intent gyroscopeReadings = new Intent(getApplicationContext(), GyroscopeReadings.class);
-    //    startActivity(gyroscopeReadings);
         Intent trackerActivity = new Intent(this, TrackingActivity.class);
         startActivity(trackerActivity);
         

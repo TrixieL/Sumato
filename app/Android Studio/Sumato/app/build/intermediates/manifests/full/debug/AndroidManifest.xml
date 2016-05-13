@@ -50,9 +50,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="team10.sumato.ConnectActivity" />
         </activity>
-        <activity
-            android:name="team10.sumato.GyroscopeReadings"
-            android:screenOrientation="landscape" />
         <activity android:name="team10.sumato.TrackingActivity" />
     </application>
 
