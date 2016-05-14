@@ -30,6 +30,12 @@
                 android:value="team10.sumato.ConnectActivity" />
         </activity>
         <activity android:name=".TrackingActivity"></activity>
+        <activity
+            android:name=".StreamActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>

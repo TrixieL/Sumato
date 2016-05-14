@@ -49,6 +49,11 @@ public class ConnectActivity extends AppCompatActivity {
 
     }
 
+    public void streamVideo(View view){
+        Intent intent = new Intent(ConnectActivity.this, StreamActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
