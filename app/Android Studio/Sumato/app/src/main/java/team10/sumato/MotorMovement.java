@@ -48,8 +48,8 @@ public class MotorMovement {
             yTotal = this.yTotal + y;
             counter++;
         } else {
-            averageX = (int) Math.round((xTotal / offset) / 10) * 10;
-            averageY = (int) Math.round((yTotal / offset) / 10) * 10;
+            averageX = (int) Math.round((xTotal / counter) / 10) * 10;
+            averageY = (int) Math.round((yTotal / counter) / 10) * 10;
             sendMovement(averageX, averageY);
             counter = 0;
             xTotal = 0;
