@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="activity_horizontal_margin">64dp</dimen>
+    <string name="connect_to_sumato">Connect to Sumato</string>
+    <string name="stream_video">Stream video</string>
 </resources>

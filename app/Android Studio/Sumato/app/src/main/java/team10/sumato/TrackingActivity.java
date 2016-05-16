@@ -2,6 +2,9 @@ package team10.sumato;
 
 
 import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
 import com.google.vrtoolkit.cardboard.CardboardActivity;
 import com.google.vrtoolkit.cardboard.CardboardView;
 import com.google.vrtoolkit.cardboard.Eye;
@@ -15,11 +18,14 @@ public class TrackingActivity extends CardboardActivity implements CardboardView
 
     float[] movementMatrix = new float[16];
     MotorMovement motorMovement;
+    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracking);
+
+        TCPSingleton.getInstance().getClient().start();
 
         CardboardView cardboardView = (CardboardView) findViewById(R.id.cardboard_view);
         cardboardView.setRenderer(this);
@@ -31,6 +37,16 @@ public class TrackingActivity extends CardboardActivity implements CardboardView
             }
         });
         setCardboardView(cardboardView);
+
+        webView = (WebView) findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+
+        // Force links and redirects to open in the WebView instead of in a browser
+        webView.setWebViewClient(new WebViewClient());
+
+        webView.loadUrl("file:///android_asset/vr.html");
+
+
 
         motorMovement= new MotorMovement();
     }

@@ -232,6 +232,7 @@
       Place your phone into your <ns1:g example="Cardboard I/O 2015" id="viewer_name">%s</ns1:g> viewer
     </string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stream_video">Stream video</string>
     <string description=" Text which when pressed, takes the user to the view that allows them to switch their Cardboard compatible viewer. [CHAR LIMIT=10]" name="switch_viewer_action">
       Switch
     </string>

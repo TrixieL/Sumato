@@ -5,8 +5,8 @@ import android.util.Log;
 public class MotorMovement {
 
     private int xLimit = 80;
-    private int yLimit = 80;
-    private int sendingDelay = 10;
+    private int yLimit = 100;
+    private int sendingDelay = 15;
     private int offset = 150;
 
     private double xTotal = 0;
@@ -30,8 +30,8 @@ public class MotorMovement {
      */
     public MotorMovement() {
         this.xLimit = 80;
-        this.yLimit = 80;
-        this.sendingDelay = 100;
+        this.yLimit = 100;
+        this.sendingDelay = 15;
         this.offset = 150;
     }
 
@@ -48,8 +48,8 @@ public class MotorMovement {
             yTotal = this.yTotal + y;
             counter++;
         } else {
-            averageX = (int) Math.round((xTotal / counter) / 10) * 10;
-            averageY = (int) Math.round((yTotal / counter) / 10) * 10;
+            averageX = (int) Math.round((xTotal / counter) );
+            averageY = (int) Math.round((yTotal / counter) );
             sendMovement(averageX, averageY);
             counter = 0;
             xTotal = 0;
@@ -60,13 +60,12 @@ public class MotorMovement {
      * Send a formatted string "pos(x,y)" to the server.
      * Checks if the values are within the bounds before sending it and adds the offset for the camera movement.
      */
-
     private void sendMovement(int x, int y) {
         if (-xLimit < x && x < xLimit && -yLimit < y && y < yLimit) {
             x = x + offset;
-            y = y + offset;
-            String str = "pos(" + x + "," + y + ")";
-            //TCPSingleton.getInstance().getClient().send(str);
+            y = -y + offset;
+            String str = "pos(" + y + "," + x + ")";
+            TCPSingleton.getInstance().getClient().send(str);
             Log.d("motor", str);
         } else {
             Log.d("motors", "out of bounds");
