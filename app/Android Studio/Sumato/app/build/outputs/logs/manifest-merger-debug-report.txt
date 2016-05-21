@@ -1,136 +1,136 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12
-	package
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:3:5-28
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12
 	xmlns:android
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:11-69
+	package
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:5:22-64
 uses-feature#android.hardware.sensor.accelerometer
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:6:5-98
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:6:5-98
 	android:required
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:6:72-95
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:6:72-95
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:6:19-71
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:6:19-71
 uses-feature#android.hardware.sensor.gyroscope
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:7:5-94
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:7:5-94
 	android:required
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:7:68-91
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:7:68-91
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:7:19-67
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:7:19-67
 application
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:9:5-42:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:12:9-41
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:9:5-42:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:12:9-41
 	android:allowBackup
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:10:9-35
 	android:icon
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:11:9-43
 	android:theme
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:14:9-40
 activity#team10.sumato.ConnectActivity
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:screenOrientation
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:17:13-50
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:17:13-50
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:16:13-44
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:16:13-44
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:21:27-74
 activity#team10.sumato.SettingsActivity
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:24:9-31:20
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:24:9-31:20
 	android:label
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:26:13-60
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:26:13-60
 	android:parentActivityName
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:27:13-58
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:27:13-58
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:25:13-45
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:25:13-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:28:13-30:65
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:28:13-30:65
+	android:name
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:29:17-63
 	android:value
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:30:17-62
-	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:29:17-63
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:30:17-62
 activity#team10.sumato.TrackingActivity
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:9-35:20
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:9-35:20
 	android:screenOrientation
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:34:13-50
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:34:13-50
 	android:configChanges
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:33:13-74
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:33:13-74
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:19-51
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:19-51
 activity#team10.sumato.StreamActivity
-ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:36:9-41:20
+ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:36:9-41:20
 	android:screenOrientation
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:39:13-50
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:39:13-50
 	android:label
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:40:13-45
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:40:13-45
 	android:configChanges
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:38:13-74
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:38:13-74
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:37:13-43
+		ADDED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:37:13-43
 uses-sdk
-INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:4:5-73
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:23:9-75
+INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:4:5-73
 	android:targetSdkVersion
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:23:9-75
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12 reason: com.google.vr.cardboard has a targetSdkVersion < 4
-MERGED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:8:5-80
+IMPLIED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12 reason: com.google.vr.cardboard has a targetSdkVersion < 4
+MERGED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:8:5-80
 android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12 reason: com.google.vr.cardboard has a targetSdkVersion < 4
+IMPLIED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12 reason: com.google.vr.cardboard has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12 reason: com.google.vr.cardboard requested WRITE_EXTERNAL_STORAGE
-MERGED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:7:5-79
+IMPLIED from C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:2:1-44:12 reason: com.google.vr.cardboard requested WRITE_EXTERNAL_STORAGE
+MERGED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:7:5-79
 uses-feature#0x00020000
-ADDED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:5:5-77
-	android:glEsVersion
-		ADDED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:5:19-51
+ADDED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:5:5-77
 	android:required
-		ADDED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:5:52-75
+		ADDED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:5:52-75
+	android:glEsVersion
+		ADDED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:5:19-51
 uses-permission#android.permission.NFC
-ADDED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:6:5-61
+ADDED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:6:5-61
 	android:name
-		ADDED from [Sumato:core:unspecified] C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:6:22-59
+		ADDED from [Sumato:core:unspecified] C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\AndroidManifest.xml:6:22-59

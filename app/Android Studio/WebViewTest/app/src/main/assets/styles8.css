@@ -1,0 +1,112 @@
+@font-face {
+    font-family: MyFont;
+    src: url("file:///android_asset/futura.TTF");
+    src: url('futura.TTF');
+}
+
+body {
+    font-family: MyFont;
+    font-size: medium;
+    text-align: justify;
+    background-color: #2D2D2D;
+}
+
+p {
+  font-family: MyFont;
+  font-size: medium;
+  text-align: justify;
+  color:  #E2E2E2;
+
+}
+
+
+.button:hover, .button:visited, .button:link, .button {
+    background-color: #2D2D2D;
+    border-radius: 60px;
+    border: 2px solid #E2E2E2;
+    color: #E2E2E2;
+    width: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: MyFont;
+    font-size: 18px;
+    font-weight: bold;
+    display:inline;
+}
+
+.button:focus {
+  outline:0 !important;
+
+}
+.button:active {
+  background-color: black;
+  border: 2px solid #2D2D2D;
+}
+
+.iconbutton:hover, .iconbutton:visited, .iconbutton:link, .iconbutton {
+    background-color: #2D2D2D;
+    border-radius: 60%;
+    border: 2px solid #E2E2E2;
+    color: #E2E2E2;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+.iconbutton:focus {
+  outline:0 !important;
+
+}
+.iconbutton:active {
+  background-color: black;
+  border: 2px solid #2D2D2D;
+}
+
+.top {
+    overflow:auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+
+}
+
+.center {
+    width: auto;
+
+    margin: auto;
+
+    display:block;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+}
+
+.vrtext {
+    overflow:auto;
+
+
+    width: 300px;
+    height: 150px;
+
+    display:block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 21px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border-radius: 30px;
+    border: 2px solid #E2E2E2;
+}
+
+
+form {
+  display: inline;
+}
