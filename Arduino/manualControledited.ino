@@ -1,48 +1,53 @@
 #include <Smartcar.h>
+#include <Wire.h>
+#include <Servo.h>
+
 
 Car car;
 
-const int fSpeed = 70; //70% of the full speed forward
-const int bSpeed = -70; //70% of the full speed backward
-const int lDegrees = -75; //degrees to turn left
-const int rDegrees = 75; //degrees to turn right
+int Speed = 0; //70% of the full speed forward
+int Degrees = 0; //degrees to turn left
+
+
+
 unsigned long previousPush = 0; //time passed since the last time a command was sent
 
 void setup() {
-  Serial3.begin(9600);
+  Serial.begin(9600);
   car.begin(); //initialize the car using the encoders and the gyro
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
 }
 
 void loop() {
   handleInput();
+ /*
   if ( millis() > previousPush + 100) { //millis() show the time passed from poweron till this moment.if
         car.setSpeed(0);                //it exceeds the previousPush by 100 ms it will stop the car
         car.setAngle(0);                //this enables a "whilepressed" functionality to the AndroidRC
   }
+  */
 }
 
 void handleInput() { //handle serial input if there is any
   if (Serial.available()) {
     char input = Serial.read(); //read everything that has been received so far and log down the last entry
     switch (input) {
-      case 'l': //rotate counter-clockwise going forward
-        car.setSpeed(fSpeed);
-        car.setAngle(lDegrees);
-        break;
+
       case 'r': //turn clock-wise
-        car.setSpeed(fSpeed);
-        car.setAngle(rDegrees);
+        
+        Degrees = ((int) Serial.parseInt() * 90) / 100;
+        int leftmotor = Degrees + 100 
+        car.setMotorSpeed()
+        car.setAngle((int) Degrees);
         break;
+        
       case 'f': //go ahead
-        car.setSpeed(fSpeed);
-        car.setAngle(0);
+        Speed = Serial.parseInt();
+        car.setSpeed((int) Speed);
         break;
-      case 'b': //go back
-        car.setSpeed(bSpeed);
-        car.setAngle(0);
+
+      case 't': //Just so parseInt is faster
         break;
+        
       default: //if you receive something that you don't know, just stop
         car.setSpeed(0);
         car.setAngle(0);
@@ -50,4 +55,3 @@ void handleInput() { //handle serial input if there is any
     previousPush = millis();
   }
 }
-
