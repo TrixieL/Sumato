@@ -9,22 +9,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="team10.sumato.ConnectActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/connect_to_sumato"
-        android:id="@+id/btnConnect"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stream_video"
-        android:id="@+id/btnStream"
-        android:layout_below="@+id/btnConnect"
-        android:layout_alignEnd="@+id/btnConnect"
-        android:layout_alignStart="@+id/btnConnect"
-        android:onClick="streamVideo"/>
-
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webGUI"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

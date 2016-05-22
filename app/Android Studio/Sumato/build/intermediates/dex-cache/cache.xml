@@ -2,60 +2,60 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\core\unspecified\jars\classes.jar"
+        jumboMode="false"
         revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_4f235d7e20dbc2f4e10f4ce36437fbe31517a295\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_0e6c7376c657c0642fca570e74f15707f6202665\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="6dc8b70ba7468953d58bba979029278a17e7a4f9">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_eb98c26bd82c5b7f12ad0b0ccde9d69a081e3808\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="06b2c1fd6d518c69ccdfbd94430078bb78ec1cdc">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e03be613837f1464e583473a31b52e75ad98d48b\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_97b09e8a634cc774f228688ecc0f2a403b3e65eb\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_c1b17e2b150dc3ba007931a0ef8cd606bfe0cef6\classes.dex" />
+        sha1="8f62c2c13d20badd5d147d42ef1f0af3cd9857ad">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\Sumato-core-unspecified_91f5a8959084d2c12ae59e930e175768b3d5ea4b.jar" />
     </item>
     <item
         jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.3"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_1e85f9f2dcf813bfc3697accb07a99ae04a0cc9d\classes.dex" />
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_1e85f9f2dcf813bfc3697accb07a99ae04a0cc9d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_0e6c7376c657c0642fca570e74f15707f6202665.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_4f235d7e20dbc2f4e10f4ce36437fbe31517a295.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_c1b17e2b150dc3ba007931a0ef8cd606bfe0cef6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\Sumato\common\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6be847fe814568fbfcd6beae201e57d89a6ec2c6">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\Sumato-common-unspecified_e26a0dce6f3d429dfea8c26831ed19f66768d019.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_97b09e8a634cc774f228688ecc0f2a403b3e65eb.jar" />
     </item>
     <item
         jar="C:\AndroidSdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_d1152d9526c3ab2ced3113c1c9f89b84d03a83d9\classes.dex" />
+        <dex dex="C:\Users\Ioannis\Documents\Sumato\app\Android Studio\Sumato\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_d1152d9526c3ab2ced3113c1c9f89b84d03a83d9.jar" />
     </item>
 
 </items>
