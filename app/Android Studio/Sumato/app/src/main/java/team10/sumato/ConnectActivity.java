@@ -41,8 +41,8 @@ public class ConnectActivity extends AppCompatActivity {
 
     public void ConnectSumato(){
         initSingleton();
-        //TCPSingleton.getInstance().getClient().start();
-       // TCPSingleton.getInstance().getClient().send("PAIR_PS3");
+        TCPSingleton.getInstance().getClient().start();
+        TCPSingleton.getInstance().getClient().send("PAIR_PS3");
 
         //TODO: check if the pairing was successful and move to the next page
 
@@ -71,6 +71,7 @@ public class ConnectActivity extends AppCompatActivity {
     public void VRmode() {
         Intent trackerActivity = new Intent(this, TrackingActivity.class);
         startActivity(trackerActivity);
+        //TCPSingleton.getInstance().getClient().send("VR_MODE");
     }
 
     public void StandardMode(){
@@ -80,7 +81,8 @@ public class ConnectActivity extends AppCompatActivity {
 
     protected void initSingleton(){
         SharedPreferences preferences = getSharedPreferences("team10.sumato_preferences", MODE_PRIVATE);
-        TCPSingleton.initSingleton(preferences.getString("IP_key", "127.0.0.1"), preferences.getString("port_key", "9999"));
+       // TCPSingleton.initSingleton(preferences.getString("IP_key", "127.0.0.1"), preferences.getString("port_key", "9999"));
+        TCPSingleton.initSingleton("192.168.42.1", "9999");
     }
 
     public boolean checkSingleton() {

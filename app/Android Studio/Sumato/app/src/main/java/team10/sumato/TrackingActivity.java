@@ -25,7 +25,7 @@ public class TrackingActivity extends CardboardActivity implements CardboardView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracking);
 
-        TCPSingleton.getInstance().getClient().start();
+        TCPSingleton.getInstance().getClient().send("START_MOTORS");
 
         CardboardView cardboardView = (CardboardView) findViewById(R.id.cardboard_view);
         cardboardView.setRenderer(this);
@@ -49,6 +49,9 @@ public class TrackingActivity extends CardboardActivity implements CardboardView
 
 
         motorMovement= new MotorMovement();
+
+      //TCPSingleton.getInstance().getClient().send("START_STREAM");
+
     }
 
 
