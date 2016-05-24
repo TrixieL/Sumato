@@ -18,10 +18,26 @@
     <img src="icon.svg" style="display:block;width:150px;margin-left:auto;margin-right:auto;">
   </div>
   <div class="center">
-    <form>
-    <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
-  </form>
+
   </div>
+      <div class="box">
+          <a class="button" href="#popup1">Connect to Sumato
+          </a>
+      </div>
+
+      <div id="popup1" class="overlay">
+          <div class="popup">
+              <h2>Hello!</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                  Don't forget to turn on the controller first! <br> Press "Connect" when you are ready.
+                  <form>
+                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
 </div>
 </body>
 </html>
