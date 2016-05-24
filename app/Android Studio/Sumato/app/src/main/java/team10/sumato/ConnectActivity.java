@@ -90,6 +90,16 @@ public class ConnectActivity extends AppCompatActivity {
         return true;
     }
 
+
+        @Override
+    public void onBackPressed() {
+        if (webGUI.canGoBack()) {
+            webGUI.goBack();
+            return;
+        }
+        super.onBackPressed();
+    }
+
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
