@@ -2,6 +2,7 @@ package team10.sumato;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -14,7 +15,7 @@ import com.google.vrtoolkit.cardboard.Viewport;
 import javax.microedition.khronos.egl.EGLConfig;
 
 
-public class TrackingActivity extends CardboardActivity implements CardboardView.StereoRenderer{
+public class VRActivity extends CardboardActivity implements CardboardView.StereoRenderer{
 
     float[] movementMatrix = new float[16];
     MotorMovement motorMovement;
@@ -36,7 +37,9 @@ public class TrackingActivity extends CardboardActivity implements CardboardView
                 onBackPressed();
             }
         });
+
         setCardboardView(cardboardView);
+        setConvertTapIntoTrigger(true);
 
         webView = (WebView) findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -44,22 +47,29 @@ public class TrackingActivity extends CardboardActivity implements CardboardView
         // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("file:///android_asset/vr.html");
-
-
-
-        motorMovement= new MotorMovement();
-
-      //TCPSingleton.getInstance().getClient().send("START_STREAM");
+        webView.loadUrl("file:///android_asset/vr_choice.html");
 
     }
 
 
     @Override
     public void onNewFrame(HeadTransform headTransform) {
-        movementMatrix = headTransform.getHeadView();
-        motorMovement.addValues(movementMatrix);
+        if(motorMovement!=null) {
+            movementMatrix = headTransform.getHeadView();
+            motorMovement.addValues(movementMatrix);
+        }
 
+    }
+
+    /*
+     * Override the cardboard button. Once pressed, start the gyro readings and change the WebView to show the video stream.
+     */
+    @Override
+    public void onCardboardTrigger (){
+
+        //TCPSingleton.getInstance().getClient().send("START_STREAM");
+        motorMovement= new MotorMovement();
+        webView.loadUrl("file:///android_asset/vr.html");
     }
 
     @Override

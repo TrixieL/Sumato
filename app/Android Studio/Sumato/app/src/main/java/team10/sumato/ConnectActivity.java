@@ -4,18 +4,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.Toast;
 
 
 public class ConnectActivity extends AppCompatActivity {
@@ -69,9 +62,8 @@ public class ConnectActivity extends AppCompatActivity {
     }
 
     public void VRmode() {
-        Intent trackerActivity = new Intent(this, TrackingActivity.class);
-        startActivity(trackerActivity);
-        //TCPSingleton.getInstance().getClient().send("VR_MODE");
+        Intent vrActivity = new Intent(this, VRActivity.class);
+        startActivity(vrActivity);
     }
 
     public void StandardMode(){

@@ -51,7 +51,7 @@
                 android:value="team10.sumato.ConnectActivity" />
         </activity>
         <activity
-            android:name="team10.sumato.TrackingActivity"
+            android:name="team10.sumato.VRActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="landscape" >
         </activity>

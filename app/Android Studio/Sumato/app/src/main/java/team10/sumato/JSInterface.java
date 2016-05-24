@@ -5,6 +5,7 @@ import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
+
 /**
  * Created by Ioannis on 5/22/2016.
  */
@@ -28,7 +29,6 @@ public class JSInterface {
     }
     @JavascriptInterface
     public void ContinueVR() {
-        //TODO implement magnet click instead of clicking on "continue"
         activity.VRmode();
     }
     @JavascriptInterface

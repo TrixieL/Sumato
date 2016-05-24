@@ -79,14 +79,14 @@ ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\ap
 		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:30:17-62
 	android:name
 		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:29:17-63
-activity#team10.sumato.TrackingActivity
+activity#team10.sumato.VRActivity
 ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:9-35:20
 	android:screenOrientation
 		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:34:13-50
 	android:configChanges
 		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:33:13-74
 	android:name
-		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:19-51
+		ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:32:19-45
 activity#team10.sumato.StreamActivity
 ADDED from C:\Users\AX\AndroidStudioProjects\Sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:36:9-41:20
 	android:screenOrientation
