@@ -14,7 +14,7 @@ body {
 p {
   font-family: MyFont;
   font-size: medium;
-  text-align: justify;
+  text-align: center;
   color:  #E2E2E2;
 
 }
@@ -41,8 +41,9 @@ p {
 
 }
 .button:active {
-  background-color: black;
+  background-color: #E2E2E2;
   border: 2px solid #2D2D2D;
+  color: black;
 }
 
 .iconbutton:hover, .iconbutton:visited, .iconbutton:link, .iconbutton {
@@ -60,7 +61,8 @@ p {
 
 }
 .iconbutton:active {
-  background-color: black;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
   border: 2px solid #2D2D2D;
 }
 
@@ -86,21 +88,24 @@ p {
 }
 
 .vrtext {
-    overflow:auto;
+    overflow: auto;
+    color:  #E2E2E2;
+    text-align: center;
 
 
     width: 300px;
-    height: 150px;
+    height: auto;
 
     display:block;
 
     margin-left: auto;
     margin-right: auto;
-
-    margin-bottom: 21px;
+    margin-top: auto;
+    margin-bottom: 40px;
 
     padding-left: 30px;
     padding-right: 30px;
+
 
     border-radius: 30px;
     border: 2px solid #E2E2E2;

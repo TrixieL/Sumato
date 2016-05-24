@@ -41,8 +41,8 @@ public class ConnectActivity extends AppCompatActivity {
 
     public void ConnectSumato(){
         initSingleton();
-        TCPSingleton.getInstance().getClient().start();
-        TCPSingleton.getInstance().getClient().send("PAIR_PS3");
+        //TCPSingleton.getInstance().getClient().start();
+        //TCPSingleton.getInstance().getClient().send("PAIR_PS3");
 
         //TODO: check if the pairing was successful and move to the next page
 
