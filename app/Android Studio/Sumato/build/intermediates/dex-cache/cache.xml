@@ -2,60 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_8a50f1578e3a1abf7d4b54e49cdee3df25f48d2d/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_80884af608697abb6e1f2c6650356510fb72db3b/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="8b9c101c7d92c6337dcb84f6ebce4c28f660b2e6">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c828be93888b63caf74244413184e83996c28ddd/classes.dex" />
-    </item>
-    <item
         jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="ff16dc8a29b4171eff6292d434e4cc987ed156cc">
+        sha1="b3d739ab8f6a2fb38aecc26a87e4e0cedaa84704">
         <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_4564a9833e991c53e2c98fbcc51043e357f4141f/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_21468bebdd3639d94871ce54acefd5903f0e3cb9/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_9e082512cea6c98fad59304f976252334e7c8217/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Trixie/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_28c6e9a1c5c8cbf34d1ec0828f32f83979a85f7f/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/Trixie/AndroidStudioProjects/Sumato/app/Android Studio/Sumato/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_e9c7af9df259d9da20cd72c4f126cec0725c213a/classes.dex" />
     </item>
 
 </items>
