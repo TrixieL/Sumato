@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class StreamActivity extends Activity {
+public class StandardActivity extends Activity {
 
     private WebView webView;
 
@@ -14,12 +14,11 @@ public class StreamActivity extends Activity {
         setContentView(R.layout.activity_stream);
 
         webView = (WebView) findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
 
         // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("file:///android_asset/vr.html");
+        webView.loadUrl("file:///android_asset/mode_standard.html");
 
     }
 

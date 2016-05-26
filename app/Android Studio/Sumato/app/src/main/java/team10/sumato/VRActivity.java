@@ -2,7 +2,6 @@ package team10.sumato;
 
 
 import android.os.Bundle;
-import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -42,13 +41,12 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
         setConvertTapIntoTrigger(true);
 
         webView = (WebView) findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
 
         // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
 
         webView.loadUrl("file:///android_asset/vr_choice.html");
-
+        onCardboardTrigger();
     }
 
 
@@ -69,7 +67,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
 
         //TCPSingleton.getInstance().getClient().send("START_STREAM");
         motorMovement= new MotorMovement();
-        webView.loadUrl("file:///android_asset/vr.html");
+        webView.loadUrl("file:///android_asset/mode_vr.html");
     }
 
     @Override
