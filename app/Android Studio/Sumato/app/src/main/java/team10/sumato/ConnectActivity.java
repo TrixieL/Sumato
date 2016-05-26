@@ -2,15 +2,13 @@ package team10.sumato;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -127,8 +125,8 @@ public class ConnectActivity extends AppCompatActivity {
     }
 
     public void StandardMode() {
-        Intent intent = new Intent(ConnectActivity.this, StreamActivity.class);
-        startActivity(intent);
+        Intent standardActivity = new Intent(ConnectActivity.this, StreamActivity.class);
+        startActivity(standardActivity);
     }
 
     @Override

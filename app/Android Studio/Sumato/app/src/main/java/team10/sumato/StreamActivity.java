@@ -19,7 +19,7 @@ public class StreamActivity extends Activity {
         // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("file:///android_asset/vr.html");
+        webView.loadUrl("file:///android_asset/mode_standard.html");
 
     }
 

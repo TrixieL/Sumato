@@ -48,7 +48,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
 
         webView.loadUrl("file:///android_asset/vr_choice.html");
 
-        onCardboardTrigger();
+        //onCardboardTrigger();
 
 
     }
@@ -71,7 +71,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
 
         //TCPManager.getInstance().getClient().send("START_STREAM");
         motorMovement= new MotorMovement();
-        webView.loadUrl("file:///android_asset/vr.html");
+        webView.loadUrl("file:///android_asset/mode_vr.html");
     }
 
     @Override

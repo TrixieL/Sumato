@@ -28,14 +28,21 @@
             left: 50%;
             transform: translate(-50%, -50%)
         }
+        img {
+            margin:0;
+            padding:0;
+            width:49%;
+            height:100%;
+        }
+
 
     </style>
 </head>
 
 <body>
     <div>
-        <iframe id="frame1" src="http://192.168.42.1:9000/stream" width="49%" height="100%" frameborder="0"></iframe>
-        <iframe id="frame2" src="http://192.168.42.1:9000/stream" width="49%" height="100%" frameborder="0"></iframe>
+        <img id="frame1" src="http://192.168.42.1:9001/stream/video.mjpeg">
+        <img id="frame2" src="http://192.168.42.1:9001/stream/video.mjpeg">
     </div>
 </body>
 </html><br>

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\AX\\AndroidStudioProjects\\Sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\AX\\AndroidStudioProjects\\Sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
