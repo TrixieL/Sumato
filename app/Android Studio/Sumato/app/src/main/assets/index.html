@@ -7,6 +7,7 @@
     function Connect() {
         Interface.ConnectSumato();
     }
+
 </script>
   <div>
    <div class="top">
@@ -36,6 +37,21 @@
               </div>
           </div>
       </div>
+
+      <div id="wifiError" class="overlay">
+          <div class="popup">
+              <h2>Wifi error</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                  Error connecting to the Wifi network. Please check if Sumato is turned on and try again.
+                  <form>
+                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+
 
 </div>
 </body>

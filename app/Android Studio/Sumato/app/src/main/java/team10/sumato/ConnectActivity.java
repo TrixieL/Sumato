@@ -1,7 +1,13 @@
 package team10.sumato;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.wifi.WifiConfiguration;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,9 +17,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 
+
 public class ConnectActivity extends AppCompatActivity {
 
     private WebView webGUI;
+    private final String wifiSSID = "Sumato";
+    private final String wifiPass = "sumato3000";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,18 +38,31 @@ public class ConnectActivity extends AppCompatActivity {
         webGUI.getSettings().setJavaScriptEnabled(true);
         webGUI.getSettings().setDomStorageEnabled(true);
         webGUI.addJavascriptInterface(new JSInterface(this,this), "Interface");
+
+        connectWifi(wifiSSID, wifiPass);
+
     }
 
 
     public void ConnectSumato(){
         initSingleton();
+
+        if(isWifiConnected(wifiSSID)){
+            LoadPage("choice.html");
+
+        }
+        else {
+            LoadPage("index.html#wifiError");
+
+        }
+
         //TCPSingleton.getInstance().getClient().start();
         //TCPSingleton.getInstance().getClient().send("PAIR_PS3");
 
         //TODO: check if the pairing was successful and move to the next page
 
         // if (checkSingleton()) {
-            LoadPage("choice.html");
+
         // }
         //else {
         //    Log.d("Connection was success","false");
@@ -49,6 +71,44 @@ public class ConnectActivity extends AppCompatActivity {
         //    toast.show();
         //}
 
+    }
+
+    boolean isWifiConnected(String SSID){
+        ConnectivityManager connManager = (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connManager.getActiveNetworkInfo();
+
+        if(networkInfo!=null) {
+            if (networkInfo.isConnected()) {
+                WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+                WifiInfo info = manager.getConnectionInfo();
+                if (info != null) {
+                    String currentSSID = info.getSSID();
+                    //check if SSID has quotations around it and remove them
+                    if(currentSSID.startsWith("\"") && currentSSID.endsWith("\"")){
+                        currentSSID = currentSSID.substring(1, currentSSID.length()-1);
+                    }
+                    return currentSSID.equals(SSID);
+                }
+            }
+        }
+        return false;
+    }
+
+
+    void connectWifi(String SSID, String pass){
+        if(!isWifiConnected(SSID)) {
+            WifiConfiguration conf = new WifiConfiguration();
+            conf.SSID = "\"" + SSID + "\"";
+            conf.preSharedKey = "\"" + pass + "\"";
+            WifiManager manager = (WifiManager) this.getSystemService(Context.WIFI_SERVICE);
+            manager.setWifiEnabled(true);
+
+            int id = manager.addNetwork(conf);
+
+            manager.disconnect();
+            manager.enableNetwork(id, true);
+            manager.reconnect();
+        }
     }
 
     public void LoadPage(String page){
