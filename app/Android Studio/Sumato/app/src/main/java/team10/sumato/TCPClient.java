@@ -27,7 +27,7 @@ public class TCPClient {
     private BufferedReader reader;
 
     /*
-     * Constructor: initializes the port and host. Get these values from the SharedPreferences in an activity.
+     * Constructor: initializes the port and host.
      */
     public TCPClient(String host, int port) {
         try {
@@ -42,7 +42,6 @@ public class TCPClient {
      * Stop the client and close the socket.
      */
     public void stopClient() {
-
         running = false;
         writer = null;
         reader = null;
@@ -53,6 +52,13 @@ public class TCPClient {
                 e.printStackTrace();
             }
         }
+    }
+
+    public boolean isConnected(){
+        if(running){
+            return client.isConnected();
+        }
+        return false;
     }
 
     /*
@@ -67,63 +73,67 @@ public class TCPClient {
     /*
      * Initialize the socket and begin listening for messages.
      */
-
     public void start() {
-        running = true;
-        try {
-            // initialize the socket on a separate thread since Android does not allow it on the Main thread
-            // then retrieve the created socket to continue working with it
-            ClientThread runnableClient = new ClientThread();
-            clientThread = new Thread(runnableClient);
-            clientThread.start();
-            clientThread.join(); //blocks until thread is finished
-            client = runnableClient.getSocket();
-
+        if(client==null) {
             try {
-                writer = new PrintWriter(new BufferedWriter(new OutputStreamWriter(client.getOutputStream())), true);
-                reader = new BufferedReader(new InputStreamReader(client.getInputStream()));
+                // initialize the socket on a separate thread since Android does not allow it on the Main thread
+                // then retrieve the created socket to continue working with it
+                ClientThread runnableClient = new ClientThread();
+                clientThread = new Thread(runnableClient);
+                clientThread.start();
+                clientThread.join(); //blocks until thread is finished
+                client = runnableClient.getSocket();
 
-                // start listening for messages on a separate thread to avoid blocking the sending thread
-                listeningThread = new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.d("tcp", "Listening on " + client.getInetAddress() + ":" + client.getPort());
-                        String message;
-                        while (running) {
-                            try {
-                                message = reader.readLine();
-                                if (message != null) {
-                                    Log.d("tcp", message);
-                                    //TODO: deal with the received message here
+                try {
+                    writer = new PrintWriter(new BufferedWriter(new OutputStreamWriter(client.getOutputStream())), true);
+                    reader = new BufferedReader(new InputStreamReader(client.getInputStream()));
+                    running = true;
+
+                    // start listening for messages on a separate thread to avoid blocking the sending thread
+                    listeningThread = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Log.d("tcp", "Listening on " + client.getInetAddress() + ":" + client.getPort());
+                            String message;
+                            while (running) {
+                                try {
+                                    message = reader.readLine();
+                                    if (message != null) {
+                                        Log.d("tcp", message);
+                                        //TODO: deal with the received message here
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
                                 }
-                            } catch (Exception e) {
-                                e.printStackTrace();
                             }
                         }
-                    }
-                });
-                listeningThread.start();
+                    });
+                    listeningThread.start();
 
-
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
 
     class ClientThread implements Runnable {
         Socket threadClient;
+
         @Override
-        public void run() {
+        public void run(){
             try {
                 threadClient = new Socket(host, port);
+
             } catch (IOException e) {
                 e.printStackTrace();
+
             }
         }
+
         public Socket getSocket() {
             return threadClient;
         }

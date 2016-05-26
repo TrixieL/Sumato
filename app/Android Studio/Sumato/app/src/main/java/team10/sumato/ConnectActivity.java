@@ -10,12 +10,12 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 
 
 public class ConnectActivity extends AppCompatActivity {
@@ -37,33 +37,33 @@ public class ConnectActivity extends AppCompatActivity {
         setContentView(webGUI);
         webGUI.getSettings().setJavaScriptEnabled(true);
         webGUI.getSettings().setDomStorageEnabled(true);
-        webGUI.addJavascriptInterface(new JSInterface(this,this), "Interface");
+        webGUI.addJavascriptInterface(new JSInterface(this, this), "Interface");
 
         connectWifi(wifiSSID, wifiPass);
 
     }
 
 
-    public void ConnectSumato(){
-        initSingleton();
+    public void ConnectSumato() {
 
-        if(isWifiConnected(wifiSSID)){
-            LoadPage("choice.html");
+        if (isWifiConnected(wifiSSID)) {
+            TCPManager.getInstance().getClient().send("PAIR_PS3");
+            if (TCPManager.getInstance().getClient().isConnected()) {
 
-        }
-        else {
+                    LoadPage("choice.html");
+            }
+            else{
+                LoadPage("index.html#wifiError");
+            }
+        } else {
             LoadPage("index.html#wifiError");
 
         }
 
-        //TCPSingleton.getInstance().getClient().start();
-        //TCPSingleton.getInstance().getClient().send("PAIR_PS3");
+        //TCPManager.getInstance().getClient().start();
+        //TCPManager.getInstance().getClient().send("PAIR_PS3");
 
-        //TODO: check if the pairing was successful and move to the next page
 
-        // if (checkSingleton()) {
-
-        // }
         //else {
         //    Log.d("Connection was success","false");
         //    Toast toast = Toast.makeText(this, "Ooops try again!", Toast.LENGTH_LONG);
@@ -73,19 +73,19 @@ public class ConnectActivity extends AppCompatActivity {
 
     }
 
-    boolean isWifiConnected(String SSID){
-        ConnectivityManager connManager = (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+    boolean isWifiConnected(String SSID) {
+        ConnectivityManager connManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connManager.getActiveNetworkInfo();
 
-        if(networkInfo!=null) {
+        if (networkInfo != null) {
             if (networkInfo.isConnected()) {
                 WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
                 WifiInfo info = manager.getConnectionInfo();
                 if (info != null) {
                     String currentSSID = info.getSSID();
                     //check if SSID has quotations around it and remove them
-                    if(currentSSID.startsWith("\"") && currentSSID.endsWith("\"")){
-                        currentSSID = currentSSID.substring(1, currentSSID.length()-1);
+                    if (currentSSID.startsWith("\"") && currentSSID.endsWith("\"")) {
+                        currentSSID = currentSSID.substring(1, currentSSID.length() - 1);
                     }
                     return currentSSID.equals(SSID);
                 }
@@ -95,8 +95,8 @@ public class ConnectActivity extends AppCompatActivity {
     }
 
 
-    void connectWifi(String SSID, String pass){
-        if(!isWifiConnected(SSID)) {
+    void connectWifi(String SSID, String pass) {
+        if (!isWifiConnected(SSID)) {
             WifiConfiguration conf = new WifiConfiguration();
             conf.SSID = "\"" + SSID + "\"";
             conf.preSharedKey = "\"" + pass + "\"";
@@ -111,7 +111,7 @@ public class ConnectActivity extends AppCompatActivity {
         }
     }
 
-    public void LoadPage(String page){
+    public void LoadPage(String page) {
         final String Page = page;
         webGUI.post(new Runnable() {   //force the task (url loading) to run on the main thread because of WebView restrictions
             @Override
@@ -126,24 +126,12 @@ public class ConnectActivity extends AppCompatActivity {
         startActivity(vrActivity);
     }
 
-    public void StandardMode(){
+    public void StandardMode() {
         Intent intent = new Intent(ConnectActivity.this, StreamActivity.class);
         startActivity(intent);
     }
 
-    protected void initSingleton(){
-        SharedPreferences preferences = getSharedPreferences("team10.sumato_preferences", MODE_PRIVATE);
-       // TCPSingleton.initSingleton(preferences.getString("IP_key", "127.0.0.1"), preferences.getString("port_key", "9999"));
-        TCPSingleton.initSingleton("192.168.42.1", "9999");
-    }
-
-    public boolean checkSingleton() {
-        //// TODO: 5/23/2016 check connection and if everything is in order(probably with a handshake).return the status.
-        return true;
-    }
-
-
-        @Override
+    @Override
     public void onBackPressed() {
         if (webGUI.canGoBack()) {
             webGUI.goBack();

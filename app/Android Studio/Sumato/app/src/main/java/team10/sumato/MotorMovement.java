@@ -65,7 +65,7 @@ public class MotorMovement {
             x = x + offset;
             y = -y + offset;
             String str = "pos(" + y + "," + x + ")";
-            TCPSingleton.getInstance().getClient().send(str);
+            TCPManager.getInstance().getClient().send(str);
             Log.d("motor", str);
         } else {
             Log.d("motors", "out of bounds");
