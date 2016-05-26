@@ -1,6 +1,5 @@
 package team10.sumato;
 
-
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -13,19 +12,13 @@ import com.google.vrtoolkit.cardboard.Viewport;
 
 import javax.microedition.khronos.egl.EGLConfig;
 
+public class StandardActivity extends CardboardActivity implements CardboardView.StereoRenderer {
 
-public class VRActivity extends CardboardActivity implements CardboardView.StereoRenderer{
+    private WebView webView;
 
-    float[] movementMatrix = new float[16];
-    MotorMovement motorMovement;
-    WebView webView;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vr);
-
-        TCPManager.getInstance().getClient().send("START_MOTORS");
+        setContentView(R.layout.activity_standard);
 
         CardboardView cardboardView = (CardboardView) findViewById(R.id.cardboard_view);
         cardboardView.setRenderer(this);
@@ -46,35 +39,9 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
         // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("file:///android_asset/vr_choice.html");
-
-        //onCardboardTrigger();
-
+        webView.loadUrl("file:///android_asset/mode_standard.html");
 
     }
-
-
-    @Override
-    public void onNewFrame(HeadTransform headTransform) {
-        if(motorMovement!=null) {
-            movementMatrix = headTransform.getHeadView();
-            motorMovement.addValues(movementMatrix);
-        }
-
-    }
-
-    /*
-     * Override the cardboard button. Once pressed, start the gyro readings and change the WebView to show the video stream.
-     */
-    @Override
-    public void onCardboardTrigger (){
-
-        //TCPManager.getInstance().getClient().send("START_STREAM");
-        motorMovement= new MotorMovement();
-        webView.setInitialScale(50);
-        webView.loadUrl("file:///android_asset/mode_vr.html");
-
-    } 
 
     @Override
     public void onBackPressed(){
@@ -83,8 +50,12 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
     }
 
     @Override
-    public void onDrawEye(Eye eye) {
+    public void onNewFrame(HeadTransform headTransform) {
 
+    }
+
+    @Override
+    public void onDrawEye(Eye eye) {
 
     }
 
@@ -107,5 +78,4 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
     public void onRendererShutdown() {
 
     }
-
 }

@@ -607,8 +607,8 @@ int layout abc_search_view 0x7f040017
 int layout abc_select_dialog_material 0x7f040018
 int layout activity_connect 0x7f040019
 int layout activity_gyroscope_readings 0x7f04001a
-int layout activity_stream 0x7f04001b
-int layout activity_tracking 0x7f04001c
+int layout activity_standard 0x7f04001b
+int layout activity_vr 0x7f04001c
 int layout back_button 0x7f04001d
 int layout notification_media_action 0x7f04001e
 int layout notification_media_cancel_action 0x7f04001f

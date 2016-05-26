@@ -48,8 +48,16 @@
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_vr.xml",
+        "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\layout\\activity_vr.xml"
+    },
+    {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_standard.xml",
+        "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\layout\\activity_standard.xml"
     },
     {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
@@ -116,10 +124,6 @@
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_stream.xml",
-        "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\layout\\activity_stream.xml"
-    },
-    {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
@@ -144,10 +148,6 @@
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\Sumato\\common\\unspecified\\res\\layout\\back_button.xml"
     },
     {
-        "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tracking.xml",
-        "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\layout\\activity_tracking.xml"
-    },
-    {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
     },
@@ -164,12 +164,12 @@
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_connect.xml",
         "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\src\\main\\res\\layout\\activity_connect.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "C:\\Users\\Mantas\\Desktop\\sumato\\app\\Android Studio\\Sumato\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",

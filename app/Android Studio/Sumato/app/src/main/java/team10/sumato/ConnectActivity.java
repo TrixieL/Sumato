@@ -125,7 +125,7 @@ public class ConnectActivity extends AppCompatActivity {
     }
 
     public void StandardMode() {
-        Intent standardActivity = new Intent(ConnectActivity.this, StreamActivity.class);
+        Intent standardActivity = new Intent(ConnectActivity.this, StandardActivity.class);
         startActivity(standardActivity);
     }
 

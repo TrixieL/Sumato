@@ -99,7 +99,7 @@ ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main
 		ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:36:13-74
 	android:name
 		ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:35:19-45
-activity#team10.sumato.StreamActivity
+activity#team10.sumato.StandardActivity
 ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:39:9-44:20
 	android:screenOrientation
 		ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:42:13-50
@@ -108,7 +108,7 @@ ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main
 	android:configChanges
 		ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:41:13-74
 	android:name
-		ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml:40:13-45
 uses-sdk
 INJECTED from C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Mantas\Desktop\sumato\app\Android Studio\Sumato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78

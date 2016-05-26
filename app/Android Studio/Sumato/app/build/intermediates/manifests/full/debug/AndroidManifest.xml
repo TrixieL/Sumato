@@ -59,7 +59,7 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="team10.sumato.StreamActivity"
+            android:name="team10.sumato.StandardActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
