@@ -2,7 +2,6 @@ package team10.sumato;
 
 
 import android.os.Bundle;
-import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -26,7 +25,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracking);
 
-        TCPSingleton.getInstance().getClient().send("START_MOTORS");
+        TCPManager.getInstance().getClient().send("START_MOTORS");
 
         CardboardView cardboardView = (CardboardView) findViewById(R.id.cardboard_view);
         cardboardView.setRenderer(this);
@@ -49,6 +48,9 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
 
         webView.loadUrl("file:///android_asset/vr_choice.html");
 
+        onCardboardTrigger();
+
+
     }
 
 
@@ -67,7 +69,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
     @Override
     public void onCardboardTrigger (){
 
-        //TCPSingleton.getInstance().getClient().send("START_STREAM");
+        //TCPManager.getInstance().getClient().send("START_STREAM");
         motorMovement= new MotorMovement();
         webView.loadUrl("file:///android_asset/vr.html");
     }
