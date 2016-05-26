@@ -62,13 +62,13 @@ public class ConnectActivity extends AppCompatActivity {
     }
 
     public void VRmode() {
-        Intent VRActivity = new Intent(this, VRActivity.class);
-        startActivity(VRActivity);
+        Intent vrActivity = new Intent(this, VRActivity.class);
+        startActivity(vrActivity);
     }
 
     public void StandardMode(){
-        Intent StandardActivity = new Intent(ConnectActivity.this, StandardActivity.class);
-        startActivity(StandardActivity);
+        Intent intent = new Intent(ConnectActivity.this, StreamActivity.class);
+        startActivity(intent);
     }
 
     protected void initSingleton(){
