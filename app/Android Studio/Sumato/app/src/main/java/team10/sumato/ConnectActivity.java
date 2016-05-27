@@ -51,15 +51,12 @@ public class ConnectActivity extends AppCompatActivity {
                     LoadPage("choice.html");
             }
             else{
-                LoadPage("index.html#wifiError");
+                LoadPage("index.html#tcpError");
             }
         } else {
             LoadPage("index.html#wifiError");
 
         }
-
-        //TCPManager.getInstance().getClient().start();
-        //TCPManager.getInstance().getClient().send("PAIR_PS3");
 
 
         //else {
