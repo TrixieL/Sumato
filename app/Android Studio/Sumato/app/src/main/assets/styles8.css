@@ -177,7 +177,7 @@ form {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: gray;
 }
 .popup .close:hover {
   color: black;
