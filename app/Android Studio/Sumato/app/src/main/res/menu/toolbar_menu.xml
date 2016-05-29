@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/open_settings"
-        android:icon="@drawable/ic_info_black_24dp"
-        android:title="Settings"
-        android:showAsAction="never"
-        android:onClick="onGroupItemClick"/>
-</menu>
