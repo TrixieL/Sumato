@@ -20,6 +20,8 @@ public class StandardActivity extends CardboardActivity implements CardboardView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_standard);
 
+        TCPManager.getInstance().getClient().send("NORMAL_MODE");
+
         CardboardView cardboardView = (CardboardView) findViewById(R.id.cardboard_view);
         cardboardView.setRenderer(this);
         cardboardView.setTransitionViewEnabled(true);
@@ -38,7 +40,6 @@ public class StandardActivity extends CardboardActivity implements CardboardView
 
         // Force links and redirects to open in the WebView instead of in a browser
         webView.setWebViewClient(new WebViewClient());
-
         webView.loadUrl("file:///android_asset/mode_standard.html");
 
     }

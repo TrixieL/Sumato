@@ -25,7 +25,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vr);
 
-        TCPManager.getInstance().getClient().send("START_MOTORS");
+        TCPManager.getInstance().getClient().send("VR_MODE");
 
         CardboardView cardboardView = (CardboardView) findViewById(R.id.cardboard_view);
         cardboardView.setRenderer(this);
@@ -47,12 +47,7 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
         webView.setWebViewClient(new WebViewClient());
 
         webView.loadUrl("file:///android_asset/vr_choice.html");
-
-        //onCardboardTrigger();
-
-
     }
-
 
     @Override
     public void onNewFrame(HeadTransform headTransform) {
@@ -60,7 +55,6 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
             movementMatrix = headTransform.getHeadView();
             motorMovement.addValues(movementMatrix);
         }
-
     }
 
     /*
@@ -68,9 +62,9 @@ public class VRActivity extends CardboardActivity implements CardboardView.Stere
      */
     @Override
     public void onCardboardTrigger (){
-
-        //TCPManager.getInstance().getClient().send("START_STREAM");
-        motorMovement= new MotorMovement();
+        if(motorMovement== null) {
+            motorMovement = new MotorMovement();
+        }
         webView.setInitialScale(50);
         webView.loadUrl("file:///android_asset/mode_vr.html");
 

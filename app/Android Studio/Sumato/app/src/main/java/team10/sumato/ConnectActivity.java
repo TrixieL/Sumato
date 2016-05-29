@@ -57,15 +57,6 @@ public class ConnectActivity extends AppCompatActivity {
             LoadPage("index.html#wifiError");
 
         }
-
-
-        //else {
-        //    Log.d("Connection was success","false");
-        //    Toast toast = Toast.makeText(this, "Ooops try again!", Toast.LENGTH_LONG);
-        //    toast.setGravity(Gravity.CENTER_VERTICAL, 80, 0);
-        //    toast.show();
-        //}
-
     }
 
     boolean isWifiConnected(String SSID) {
