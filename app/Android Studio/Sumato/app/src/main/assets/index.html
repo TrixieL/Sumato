@@ -27,12 +27,12 @@
 
       <div id="popup1" class="overlay">
           <div class="popup">
-              <h2>Hello!</h2>
+              <h2>Attention!</h2>
               <a class="close" href="#" onclick="window.history.go(-1); return false;">&times;</a>
               <div class="content">
-                  Don't forget to turn on the controller first! <br> Press "Connect" when you are ready.
+                  Please connect the controller now! <br><br>
                   <form>
-                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
+                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Continue</button>
                   </form>
               </div>
           </div>
@@ -43,7 +43,7 @@
               <h2>Wifi Error!</h2>
               <a class="close" href="#" onclick="window.history.go(-2); return false;">&times;</a>
               <div class="content">
-                  Error connecting to the Wifi network. Please check if Sumato is turned on and try again.
+                  Error connecting to the Wifi network. Please check if Sumato is turned on and try again. If the problem still persists connect to network: "Sumato" password: sumato3000 <br><br>
                   <form>
                       <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
                   </form>
@@ -56,7 +56,7 @@
               <h2>Connection Error!</h2>
               <a class="close" href="#" onclick="window.history.go(-2); return false;">&times;</a>
               <div class="content">
-                  Could not communicate with Sumato. Try again.
+                  Could not communicate with Sumato.<br> Please restart Sumato.<br><br>
                   <form>
                       <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
                   </form>
