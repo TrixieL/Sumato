@@ -44,21 +44,28 @@ class ps3:
 	numbuttons=0
 	#left=right=up=down=l1=l2=r1=r2=triangle=circle=square=cross=select=start=ps=joystick_left=joystick_right=0
 	#a_left=a_right=a_up=a_down=a_l1=a_l2=a_r1=a_r2=a_triangle=a_circle=a_square=a_cross=a_select=a_start=a_ps=a_joystick_left_x=a_joystick_left_y=a_joystick_right_x=a_joystick_right_y=acc_x=acc_y=acc_z=gyro_yaw=0
-	
 	#Initialize the controller when the oject is created
 	def __init__(self):
-		#Make the stdout buffer as 0,because of bug in Pygame which keeps on printing debug statements
+                #Make the stdout buffer as 0,because of bug in Pygame which keeps on printing debug statements
 		#http://stackoverflow.com/questions/107705/python-output-buffering
-		sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
-		
-		pygame.init()
-		pygame.joystick.init()
-		ps3.joystick = pygame.joystick.Joystick(0)
-		ps3.joystick.init()
-		ps3.joystick_count = pygame.joystick.get_count()
-		ps3.numaxes = ps3.joystick.get_numaxes()
-		ps3.numbuttons = ps3.joystick.get_numbuttons()
-		# get count of joysticks=1, axes=27, buttons=19 for DualShock 3
+                sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
+                pygame.init()
+                pygame.joystick.init()
+                
+                print("Number of joysticks found:")
+                print(pygame.joystick.get_count())
+                ps3.joystick = pygame.joystick.Joystick(0)
+                ps3.joystick.init()
+                ps3.joystick_count = pygame.joystick.get_count()
+                ps3.numaxes = ps3.joystick.get_numaxes()
+                ps3.numbuttons = ps3.joystick.get_numbuttons()
+                # get count of joysticks=1, axes=27, buttons=19 for DualShock 3
+                
+                        
+                                
+                                        
+                                
+                                                        
 	
 	#Update the button values
 	def update(self):
@@ -126,4 +133,3 @@ class ps3:
 		#refresh
 		pygame.event.get()
 		return button_analog
-	

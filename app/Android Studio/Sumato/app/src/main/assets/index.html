@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles8.css" />
+</head>
+<body>
+<script type="text/javascript">
+    function Connect() {
+        Interface.ConnectSumato();
+    }
+
+</script>
+  <div>
+   <div class="top">
+     <form>
+    <button formaction="help.html" class="iconbutton" style="float:right;"><img class="img" src="help.svg" style="width:30pt;float: right;"></button>
+  </form>
+   </div>
+  <div class="center">
+    <img src="icon.svg" style="display:block;width:150px;margin-left:auto;margin-right:auto;">
+  </div>
+  <div class="center">
+      <div class="box">
+          <a class="button" href="#popup1">Connect to Sumato
+          </a>
+      </div>
+  </div>
+
+      <div id="popup1" class="overlay">
+          <div class="popup">
+              <h2>Attention!</h2>
+              <a class="close" href="#" onclick="window.history.go(-1); return false;">&times;</a>
+              <div class="content">
+                  Please connect the controller now! <br><br>
+                  <form>
+                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Continue</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+      <div id="wifiError" class="overlay">
+          <div class="popup">
+              <h2>Wifi Error!</h2>
+              <a class="close" href="#" onclick="window.history.go(-2); return false;">&times;</a>
+              <div class="content">
+                  Error connecting to the Wifi network. Please check if Sumato is turned on and try again. If the problem still persists connect to network: "Sumato" password: sumato3000 <br><br>
+                  <form>
+                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+      <div id="tcpError" class="overlay">
+          <div class="popup">
+              <h2>Connection Error!</h2>
+              <a class="close" href="#" onclick="window.history.go(-2); return false;">&times;</a>
+              <div class="content">
+                  Could not communicate with Sumato.<br> Please restart Sumato.<br><br>
+                  <form>
+                      <button class="button" onClick="Connect()" style="display:block;margin-left:auto;margin-right:auto;">Connect</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+
+
+</div>
+</body>
+</html>

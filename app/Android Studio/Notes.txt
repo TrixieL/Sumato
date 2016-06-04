@@ -1,0 +1,3 @@
+open Android Studio,click import and select this Sumato folder.
+Try running it on an emulator or on your phone via USB debugging.
+If something is off,try "Clean Project"
